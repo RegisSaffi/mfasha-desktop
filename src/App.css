@@ -1,0 +1,185 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+
+.hidden {
+  display: none !important;
+}
+
+html,body{
+  height: 100%;
+}
+
+
+
+
+/* APP_SDK_WRAPPER */
+
+.sdk-wrapper {
+  flex-basis: 660px;
+  position: relative;
+   border-radius: 0px;
+}
+
+
+/* QISCUS CUSTOMIZED */
+.qcw-header .qcw-window-toggle-btn {
+  display: none;
+}
+
+.qcw-app--wide-mode {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+   border-radius: 0px;
+    box-shadow: 0px;
+}
+
+.qcw-app--wide-mode .qcw-container {
+  border-radius: 0;
+  box-shadow: 0px;
+}
+
+.sdk-wrapper .qcw-header {
+  border-radius: 0;
+  height: 30px;
+  background: #FFF;
+  color: #444;
+  text-shadow: none;
+  padding-left: 81px;
+  flex: 0 0 64px;
+-webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.sdk-wrapper .isTypingText {
+  position: relative;
+  font-size: 11px;
+  margin-top: 7px;
+  color: #0373b1;
+
+}
+
+.sdk-wrapper .qcw-room-avatar {
+  width: 50px;
+  height: 50px;
+  max-width: initial;
+  max-height: initial;
+  left: 15px;
+  margin-left: 0;
+  object-fit: cover;
+}
+
+.sdk-wrapper .qcw-comment__message {
+  background: transparent;
+  box-shadow: none;
+  padding: 0 0 0 15px;
+  order: 2;
+  flex: 1 1 100%;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.sdk-wrapper .qcw-comment__message:after {
+  content: none !important;
+}
+
+.sdk-wrapper .qcw-comment .qcw-avatar {
+  order: 1;
+  margin-left: 0;
+}
+
+.sdk-wrapper .qcw-comment .qcw-avatar img {
+  object-fit: cover;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.sdk-wrapper .qcw-comment {
+  justify-content: center;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.sdk-wrapper .qcw-comment.comment--parent .qcw-comment__message {
+  width: 100%;
+}
+
+.sdk-wrapper .qcw-comment__info {
+  border: 0;
+  margin-bottom: 0;
+}
+
+.sdk-wrapper ul#messages__comments {
+  background: #FFF;
+}
+
+.sdk-wrapper .qcw-comment__state {
+  display: none;
+}
+
+.sdk-wrapper .qcw-comment.comment--last {
+  margin-bottom: 24px;
+}
+
+.sdk-wrapper .widget-chat-wrapper {
+  display: flex;
+  flex-direction: column;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.sdk-wrapper .qcw-comment-form {
+  flex: 0 0 55px;
+  margin: 0 10%;
+
+}
+
+.sdk-wrapper .qcw-comment-form textarea {
+  border-bottom: 1px solid #c4c4c4;
+  padding: 0;
+}
+
+.sdk-wrapper .qcw-comment-form .qcw-form-actions {
+  bottom: 5px;
+  top: auto;
+}
+
+.sdk-wrapper .reply-wrapper {
+  background: #000;
+}
+
+.sdk-wrapper .reply-wrapper:after {
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+.sdk-wrapper .reply-wrapper:before {
+  content: "\"";
+  position: absolute;
+  color: rgba(0, 0, 0, .05);
+  font-size: 70px;
+  top: 22px;
+  right: 14px;
+  font-style: oblique;
+  font-family: serif;
+}
+
+.sdk-wrapper .qcw-goto-bottom i {
+  top: 6px;
+  position: relative;
+}
+
+
