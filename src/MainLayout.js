@@ -7,7 +7,6 @@ import Login from './Login';
 import NotFound from './components/NotFound.js';
 
 
-
 export default class MainLayout extends React.Component {
   render() {
     return (

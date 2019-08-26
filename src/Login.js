@@ -86,8 +86,6 @@ class Login extends Component {
   
   };
 
-
-
 //  componentDidMount() {
 
 // axios.defaults.baseURL = 'http://mfasha.trumpet.rw/android/api.php';
@@ -211,7 +209,7 @@ window.QiscusSDK.core.setUser(response.data[0].client_email, response.data[0].cl
               })
               .catch(function (error) {
                 console.log(error);
-                doc.setState({loading:false,error:false,open:true,errorText:'Failed to connect to the server, check your internet.'});
+                doc.setState({loading:false,error:false,open:true,errorText:'Failed to connect to the server, check your internet connection.'});
             });
 
     }
@@ -281,8 +279,6 @@ window.QiscusSDK.core.setUser(response.data[0].client_email, response.data[0].cl
         
        
 
-
-
  <form className={classes.margin}>
         <Grid container spacing={16} alignItems="flex-end" className={classes.grid2}>
           <Grid item>
@@ -332,6 +328,13 @@ window.QiscusSDK.core.setUser(response.data[0].client_email, response.data[0].cl
         </Button>
       </CardActions>
     </Card>
+
+
+
+
+
+
+    
         </Grid>
         
       </Grid>

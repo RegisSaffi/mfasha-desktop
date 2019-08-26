@@ -214,14 +214,16 @@ render()
 
     <Grid container spacing={5} className={classes.grid}>
 
+
        <Grid item xs={4}  style={{overflow:'auto',}}> 
 
-       <Paper style={{backgroundColor:'#fff',borderRadius:0,height:'100%'}}>
+       <Paper style={{borderRadius:0,height:'100%',marginRight:1, }} elevation={5}>
 
 
       <List >
       <ListItem>
-<TextField
+     
+     <TextField
            fullWidth
         placeholder="Search chats..."
         id="bootstrap-input"
@@ -234,7 +236,7 @@ render()
         }}
        
       />
-
+     
 
 
       </ListItem>
@@ -288,7 +290,7 @@ render()
       </Paper>
     </Grid>
    
-    <Grid item xs={8}>
+    <Grid item xs={6} style={{backgroundColor:'#f2f2f2'}}>
 {
   selectedIndex==='none' ?
 
@@ -300,6 +302,13 @@ render()
     <div id="qiscus-widget" style={{height:'100%',backgroundColor:'#f2f2f2'}}></div>
 }
     </Grid>
+
+<Grid item xs={2}>
+<Paper>
+
+
+</Paper>
+</Grid>
     </Grid>
 
     </div>

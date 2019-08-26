@@ -186,10 +186,10 @@ class MiniDrawer extends React.Component {
   if (loggedIn && Boolean(loggedIn) === true) {
 
     const data=window.localStorage.getItem('mfasha');
-
+window.localStorage.clear(); 
     this.state={
       data: data
-    //window.sessionStorage.clear(); 
+    
   }
 }
 }
@@ -319,7 +319,7 @@ class MiniDrawer extends React.Component {
               {theme.direction === 'rtl' ? <ChevronRightIcon /> : <ChevronLeftIcon />}
             </IconButton>
           </div>
-          <Divider />
+          
           <List>{SimpleList}</List>
           
 
